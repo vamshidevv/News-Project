@@ -1,0 +1,104 @@
+.App {
+  text-align: center;
+}
+
+body {
+  font-family: "Source Code Pro", monospace;
+  background-color: #eaeaea !important;
+}
+/* navbar css starts from here  */
+
+.nav-container {
+  /* border: 1px solid red; */
+}
+
+.nav-link {
+  color: white !important;
+  transition: 0.3s all;
+  position: relative;
+  padding-bottom: 5px;
+  margin: 0 auto;
+  cursor: pointer;
+  letter-spacing: 0.5px !important;
+}
+.nav-link.active {
+  /* color: green !important; */
+  color: aquamarine !important;
+}
+
+.line {
+  position: absolute; /* Positioning the line */
+  bottom: 5px; /* Placing the line at the bottom of the nav-link */
+  left: 5px; /* Start from the left */
+  height: 1px;
+  width: 0;
+  background-color: white;
+  transition: width 0.3s; /* Transition for the hover effect */
+  text-align: center;
+}
+
+.line2 {
+  position: absolute; /* Positioning the line */
+  bottom: 5px; /* Placing the line at the bottom of the nav-link */
+  left: 5px; /* Start from the left */
+  height: 1px;
+  width: 0;
+  background-color: white;
+  transition: width 0.3s; /* Transition for the hover effect */
+  text-align: center;
+}
+
+.line3 {
+  position: absolute; /* Positioning the line */
+  bottom: 5px; /* Placing the line at the bottom of the nav-link */
+  left: 7px; /* Start from the left */
+  height: 1px;
+  width: 0;
+  background-color: white;
+  transition: width 0.3s; /* Transition for the hover effect */
+  text-align: center;
+}
+.nav-link:hover .line {
+  width: 50px; /* Expand the width on hover */
+}
+.nav-link:hover .line2 {
+  width: 70px;
+}
+.nav-link:hover .line3 {
+  width: 55px;
+}
+
+@media (max-width: 991px) {
+  .line,
+  .line2,
+  .line3 {
+    display: none;
+  }
+  .nav-link:hover {
+    /* text-shadow: 1px 1px 4px white; */
+    color: rgba(255, 255, 255, 0.767) !important;
+  }
+}
+
+/* Nav bar css ends here */
+
+/* Login form css starts from here */
+
+#login-form-container {
+  /* background-color: red; */
+
+  animation: loginform 0.8s forwards;
+  transition: 0.3s all;
+}
+
+@keyframes loginform {
+  0% {
+    transform: translateX(-2%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+
+    opacity: 1;
+  }
+}
